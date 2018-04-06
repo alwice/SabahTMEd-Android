@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.sabahtmed.herbs_list"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            tools:ignore="ExtraText">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                />
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+
+        android:id="@+id/listDis"
+        android:layout_width="match_parent"
+        android:layout_marginTop="105dp"
+        android:layout_height="462dp"
+        android:layout_below="@+id/searchDis"
+
+        />
+
+    <SearchView
+
+        android:id="@+id/searchDis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:queryHint="Carian Penyakit"
+
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

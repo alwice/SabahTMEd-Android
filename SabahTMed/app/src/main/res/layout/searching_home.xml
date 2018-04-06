@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.sabahtmed.herbs_list"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            tools:ignore="ExtraText">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light">
+
+
+                <TextView
+                    android:id="@+id/NamaBesarPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/logo"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Carian Herba"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold" />
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <Spinner
+            android:id="@+id/spinnerHerb"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/spinnerDisease"
+            android:layout_alignStart="@+id/spinnerDisease"
+            android:layout_alignTop="@+id/textView2"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/appBarLayout"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="82dp"
+            android:paddingTop="5dp"
+            android:text="Herba :"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/spinnerHerb"
+            android:layout_marginTop="78dp"
+            android:paddingTop="5dp"
+            android:text="Penyakit :"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/spinnerDisease"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/button_cari"
+            android:layout_alignStart="@+id/button_cari"
+            android:layout_alignTop="@+id/textView3"
+            android:dropDownWidth="match_parent"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerDisease"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:text="CARI" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

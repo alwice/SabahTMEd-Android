@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.sabahtmed.herbs_list"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            tools:ignore="ExtraText">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light">
+
+
+                <TextView
+                    android:id="@+id/NamaBesarPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/logo"
+                    android:fontFamily="sans-serif"
+                    android:text="Batuk"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold" />
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+
+        android:id="@+id/listDisHerb"
+        android:layout_width="match_parent"
+        android:layout_height="572dp"
+        android:layout_below="@+id/searchDis"
+        android:layout_marginTop="72dp"
+
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

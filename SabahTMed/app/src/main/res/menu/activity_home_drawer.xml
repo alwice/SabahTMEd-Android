@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/herbs"
+            android:icon="@drawable/ic_action_name"
+            android:title="Herba" />
+        <item
+            android:id="@+id/diseases"
+            android:icon="@drawable/diseases"
+            android:title="Penyakit" />
+
+
+        <item
+            android:id="@+id/searching"
+            android:icon="@drawable/search_ico"
+            android:title="Carian" />
+
+
+    </group>
+
+</menu>

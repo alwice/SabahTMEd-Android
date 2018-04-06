@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/herb_disease_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Penyakit  :"
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/herb_disease"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Terkehel"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Bahagian yang digunakan: "
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/herb_part"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Daun"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Cara Pemprosesan : "
+            android:textSize="14dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/herb_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Hancurkan 10 helai daun ati-ati dan tampalkan pada bahagian terkehel selama 10 minit."
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.sabahtmed.herbs_information"
+
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/gambar_herb"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="75dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ati" />
+
+            <TextView
+                android:text="ATI-ATI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/NamaBesar"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:text="Nama Tempatan  :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:textStyle="normal|bold"
+                    >
+
+
+
+
+                </TextView>
+
+                <TextView
+                    android:text="ATI-ATI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:id="@+id/local_name">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Nama Saintifik     :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/sci_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Solenostemon"
+                    android:textSize="14dp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                android:text="Nama English       :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="Solenostemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:id="@+id/eng_name" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Penyakit  :"
+                    android:textSize="14dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/herb_disease"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=" Terkehel"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Bahagian yang digunakan: "
+                    android:textSize="14dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/herb_part"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Daun"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Cara Pemprosesan : "
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/herb_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingBottom="35dp"
+                android:text="Hancurkan 10 helai daun ati-ati dan tampalkan pada bahagian terkehel selama 10 minit."
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
